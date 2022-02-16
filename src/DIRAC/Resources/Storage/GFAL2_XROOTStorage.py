@@ -27,8 +27,8 @@ class GFAL2_XROOTStorage(GFAL2_StorageBase):
     Xroot interface to StorageElement using gfal2
     """
 
-    _INPUT_PROTOCOLS = ["file", "root", "xroot"]
-    _OUTPUT_PROTOCOLS = ["root"]
+    _INPUT_PROTOCOLS = ["file", "root", "xroot", "http", "https", "dav", "davs"]
+    _OUTPUT_PROTOCOLS = ["root", "http", "https", "dav", "davs"]
 
     PROTOCOL_PARAMETERS = GFAL2_StorageBase.PROTOCOL_PARAMETERS + ["SvcClass"]
     DYNAMIC_OPTIONS = {"SvcClass": "svcClass"}
